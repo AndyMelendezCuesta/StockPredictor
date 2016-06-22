@@ -1,0 +1,267 @@
+#Summary
+#Using all data
+#my_first_analyzer.py (using previous ystockquote.py)
+length is right!
+length of negative error list:  44
+percetage of negative errors:  47.8260869565
+length of positive error list:  48
+percentage of positive errors:  52.1739130435
+metric#6:  -694.301334145
+complement of metric#6:  808.730730309
+cumulative forecast error:  114.429396164 ############
+Now it is time to check if this Stock Predictor for daily stock prices is good enough for you
+You gained (using the given data):  808.730730309
+You lost (using the given data):  -694.301334145
+Your final gain or Cumulative forecast error:  114.429396164
+Average gain per stock price:  8.7905514164
+Average loss per stock price:  -7.54675363201
+Average total gain per stock price:  1.24379778439
+maximum loss:  -66.060013
+maximum gain:  130.88497875
+total probability of loss (negative values): 47.8260869565
+total probability of gain (positive_values):  52.1739130435
+probability of three min values:  0
+probability of three max values:  0.0326086956522
+mean absolute error 16.3373050484
+mean absolute percent error:  2.56467188276
+mean absolute deviation:  16.3373050484
+r2 score:  0.96262513743
+Spearman correlation:  0.908459279805
+
+
+#Benchmark, 1st change: using optimized_ystockquote.py,  iterations = 1000, N = 0.5, M = 0.1
+#optimized (1st change: using optimized_ystockquote.py)
+# iterations = 1000, N = 0.5, M = 0.1
+length of negative error list:  47
+percetage of negative errors:  51.0869565217
+length of positive error list:  45
+percentage of positive errors:  48.9130434783
+metric#6:  -868.978488435
+complement of metric#6:  967.201107957
+cumulative forecast error:  98.222619522 ##############
+Now it is time to check if this Stock Predictor for daily stock prices is good enough for you
+You gained (using the given data):  967.201107957
+You lost (using the given data):  -868.978488435
+Your final gain or Cumulative forecast error:  98.222619522
+Average gain per stock price:  10.5130555213
+Average loss per stock price:  -9.44541835255
+Average total gain per stock price:  1.06763716872
+maximum loss:  -56.919807994
+maximum gain:  136.069992
+total probability of loss (negative values): 51.0869565217
+total probability of gain (positive_values):  48.9130434783
+probability of three min values:  0
+probability of three max values:  0.0326086956522
+mean absolute error 19.9584738738
+mean absolute percent error:  3.07061480364
+mean absolute deviation:  19.9584738738
+r2 score:  0.951973651462
+Spearman correlation:  0.892736444235
+
+#2nd and 3rd Changes
+#Today: Monday 30, 2016, iterations = 2500, N = 0.5, M = 0.1
+
+#2nd Change
+MAXIMUM M = .95
+*no random*
+length is right!
+length of negative error list:  47
+percetage of negative errors:  51.0869565217
+length of positive error list:  45
+percentage of positive errors:  48.9130434783
+metric#6:  -873.192768352
+complement of metric#6:  966.358737434
+cumulative forecast error:  93.1659690816 ##############
+Now it is time to check if this Stock Predictor for daily stock prices is good enough for you
+You gained (using the given data):  966.358737434
+You lost (using the given data):  -873.192768352
+Your final gain or Cumulative forecast error:  93.1659690816
+Average gain per stock price:  10.5038993199
+Average loss per stock price:  -9.49122574296
+Average total gain per stock price:  1.01267357697
+maximum loss:  -56.9479247295 #minimum value from the error list
+maximum gain:  133.332294377  #maximum value from the error list
+total probability of loss (negative values): 51.0869565217
+total probability of gain (positive_values):  48.9130434783
+probability of three min values:  0
+probability of three max values:  0.0326086956522
+mean absolute error 19.9951250629
+mean absolute percent error:  3.07427704404
+mean absolute deviation:  19.9951250629
+r2 score:  0.952135186429
+Spearman correlation:  0.893553396771
+
+#3rd Change
+MAXIMUM M = .95
+*Used random*
+length is right!
+length of negative error list:  47
+percetage of negative errors:  51.0869565217
+length of positive error list:  45
+percentage of positive errors:  48.9130434783
+metric#6:  -869.142166773
+complement of metric#6:  960.730992879
+cumulative forecast error:  91.5888261064 ############
+Now it is time to check if this Stock Predictor for daily stock prices is good enough for you
+You gained (using the given data):  960.730992879
+You lost (using the given data):  -869.142166773
+Your final gain or Cumulative forecast error:  91.5888261064
+
+
+from the perspective of the seller I would use this stock predictor, but from the perspective of the buyer, not really:
+Average gain per stock price:  10.4427281835
+Average loss per stock price:  -9.44719746492
+Average total gain per stock price:  0.995530718548
+maximum loss:  -56.9102603121
+maximum gain:  136.069992
+total probability of loss (negative values): 51.0869565217
+total probability of gain (positive_values):  48.9130434783
+probability of three min values:  0
+probability of three max values:  0.0326086956522
+mean absolute error 19.8899256484
+mean absolute percent error:  3.06091931524
+mean absolute deviation:  19.8899256484
+r2 score:  0.952032983474
+Spearman correlation:  0.892164343445
+
+#4th change 
+#Test1 1500 iteration
+length of y_true (expect):  92
+length of y_pred (predict):  92
+mean absolute error 16.5591851487
+mean absolute percent error:  2.58488413024
+mean absolute deviation:  16.5591851487
+r2 score:  0.963594172355
+Spearman correlation:  0.912867900962
+length is right!
+length of negative error list:  48
+percetage of negative errors:  52.1739130435
+length of positive error list:  44
+percentage of positive errors:  47.8260869565
+metric#6:  -723.101760353
+complement of metric#6:  800.343273331
+cumulative forecast error:  77.2415129785
+Now it is time to check if this Stock Predictor for daily stock prices is good enough for you
+You gained (using the given data):  800.343273331
+You lost (using the given data):  -723.101760353
+Your final gain or Cumulative forecast error:  77.2415129785
+Average gain per stock price:  8.69938340577
+Average loss per stock price:  -7.85980174296
+Average total gain per stock price:  0.83958166281
+maximum loss:  -51.4000397499
+maximum gain:  132.441003422
+total probability of loss (negative values): 52.1739130435
+total probability of gain (positive_values):  47.8260869565
+
+Test#2 Iterations 2500
+length of y_true (expect):  92
+length of y_pred (predict):  92
+mean absolute error 16.6330493398
+mean absolute percent error:  2.59725524442
+mean absolute deviation:  16.6330493398
+r2 score:  0.963481249809
+Spearman correlation:  0.912420911589
+length is right!
+length of negative error list:  48
+percetage of negative errors:  52.1739130435
+length of positive error list:  44
+percentage of positive errors:  47.8260869565
+metric#6:  -725.408429358
+complement of metric#6:  804.832109906
+cumulative forecast error:  79.423680548
+Now it is time to check if this Stock Predictor for daily stock prices is good enough for you
+You gained (using the given data):  804.832109906
+You lost (using the given data):  -725.408429358
+Your final gain or Cumulative forecast error:  79.423680548
+Average gain per stock price:  8.74817510768
+Average loss per stock price:  -7.88487423216
+Average total gain per stock price:  0.863300875522
+maximum loss:  -51.3996432736
+maximum gain:  132.447304774
+total probability of loss (negative values): 52.1739130435
+total probability of gain (positive_values):  47.8260869565
+
+Test#3 Iterations 2000
+length of y_true (expect):  92
+length of y_pred (predict):  92
+mean absolute error 16.3996890187
+mean absolute percent error:  2.55748117013
+mean absolute deviation:  16.3996890187
+r2 score:  0.964583363264
+Spearman correlation:  0.915017418638
+length is right!
+length of negative error list:  48
+percetage of negative errors:  52.1739130435
+length of positive error list:  44
+percentage of positive errors:  47.8260869565
+metric#6:  -708.648751852
+complement of metric#6:  800.122637866
+cumulative forecast error:  91.4738860143
+Now it is time to check if this Stock Predictor for daily stock prices is good enough for you
+You gained (using the given data):  800.122637866
+You lost (using the given data):  -708.648751852
+Your final gain or Cumulative forecast error:  91.4738860143
+Average gain per stock price:  8.69698519419
+Average loss per stock price:  -7.70270382447
+Average total gain per stock price:  0.994281369721
+maximum loss:  -42.951618549
+maximum gain:  132.455844701
+total probability of loss (negative values): 52.1739130435
+total probability of gain (positive_values):  47.8260869565
+
+
+Test#4 Iterations 3000
+length of y_true (expect):  92
+length of y_pred (predict):  92
+mean absolute error 16.4491654204
+mean absolute percent error:  2.56369042687
+mean absolute deviation:  16.4491654204
+r2 score:  0.964475945129
+Spearman correlation:  0.91475186367
+length is right!
+length of negative error list:  48
+percetage of negative errors:  52.1739130435
+length of positive error list:  44
+percentage of positive errors:  47.8260869565
+metric#6:  -712.750369529
+complement of metric#6:  800.572849151
+cumulative forecast error:  87.8224796218
+Now it is time to check if this Stock Predictor for daily stock prices is good enough for you
+You gained (using the given data):  800.572849151
+You lost (using the given data):  -712.750369529
+Your final gain or Cumulative forecast error:  87.8224796218
+Average gain per stock price:  8.70187879512
+Average loss per stock price:  -7.74728662532
+Average total gain per stock price:  0.954592169802
+maximum loss:  -42.9379773394
+maximum gain:  132.453336396
+total probability of loss (negative values): 52.1739130435
+total probability of gain (positive_values):  47.8260869565
+
+Test#5 Iterations 3500
+length of y_true (expect):  92
+length of y_pred (predict):  92
+mean absolute error 16.4015442875
+mean absolute percent error:  2.55808322997
+mean absolute deviation:  16.4015442875
+r2 score:  0.964584211776
+Spearman correlation:  0.915133674682
+length is right!
+length of negative error list:  48
+percetage of negative errors:  52.1739130435
+length of positive error list:  44
+percentage of positive errors:  47.8260869565
+metric#6:  -710.169784161
+complement of metric#6:  798.772290289
+cumulative forecast error:  88.6025061277
+Now it is time to check if this Stock Predictor for daily stock prices is good enough for you
+You gained (using the given data):  798.772290289
+You lost (using the given data):  -710.169784161
+Your final gain or Cumulative forecast error:  88.6025061277
+Average gain per stock price:  8.68230750314
+Average loss per stock price:  -7.71923678436
+Average total gain per stock price:  0.963070718779
+maximum loss:  -42.9350350572
+maximum gain:  132.451969047
+total probability of loss (negative values): 52.1739130435
+total probability of gain (positive_values):  47.8260869565
